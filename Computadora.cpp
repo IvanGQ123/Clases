@@ -2,7 +2,7 @@
 
 Computadora::Computadora(const string &marca,int ram,const string &so, int memoria){
 
-    this->marca = marca;  
+    this->marca = marca;
     this->ram = ram;
     this->so = so;
     this->memoria = memoria;

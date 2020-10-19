@@ -21,16 +21,23 @@ int main(){
   c03.setRam(8);
   c03.setMemoria(100);
 
-  
+
   Laboratorio lb;
 
-  lb.agregarComputadora(c01);
-  lb.agregarComputadora(c02);
-  lb.agregarComputadora(c03);
+  Computadora c04;
+  cin >> c04;
+
+  //lb.agregarComputadora(c01);
+  //lb.agregarComputadora(c02);
+  //lb.agregarComputadora(c03);
+  //lb.agregarComputadora(c04);
+  lb << c01 << c02 << c03 << c04;
+
+
 
   lb.mostrarComputadora();
-  
+
     system("Pause");
-    
+
     return 0;
 }
