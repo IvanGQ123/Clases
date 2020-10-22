@@ -6,7 +6,7 @@
 using namespace std;
 
 class Computadora{
-
+    
 private:
     string marca;
     int ram;
@@ -14,7 +14,7 @@ private:
     int memoria;
 public:
     Computadora(){};
-    Computadora(const string &marca,int ram,const string &so, int memoria);
+    Computadora(const string &marca,int ram,const string &so, int memoria); 
 
     void setMarca(const string &v);
     string getMarca();
@@ -26,10 +26,10 @@ public:
     string getSo();
 
     void setMemoria(int v);
-    int getMemoria();
+    int getMemoria();   
 
     friend ostream& operator<<(ostream &out, const Computadora &v){
-
+        
         out << left;
         out << setw(15) << v.marca;
         out << setw(15) << v.memoria;
@@ -55,7 +55,7 @@ public:
         cout << "SO: ";
         getline(cin, v.so);
         cout<<""<<endl;
-
+        
         return in;
     }
 
